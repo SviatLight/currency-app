@@ -1,0 +1,31 @@
+.currency__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.currency__item {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  border-radius: 8px;
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.currencyInp {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 14%);
+  border-radius: 8px;
+  font-size: 2rem;
+  padding: 0 10px;
+}

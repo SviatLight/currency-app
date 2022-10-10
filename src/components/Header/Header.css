@@ -1,0 +1,15 @@
+.header {
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
