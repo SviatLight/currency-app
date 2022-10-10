@@ -1,0 +1,9 @@
+{
+  "currency": [
+    {
+      "table": "lastest",
+      "rates": { "UAN": 36.93, "PLN": 5.0, "EUR": 1.03, "CAD": 1.37, "EGP": 19.66 },
+      "author": "typicode"
+    }
+  ]
+}
