@@ -1,7 +1,10 @@
 import React from 'react';
 import './Currency.css';
+import { useDispatch } from 'react-redux';
 
-const Currency = ({ activeCurrency, setActiveCurrency, currencyRates, value, onChangeValue }) => {
+const Currency = ({ activeCurrency, setCurrency, currencyRates, value, onChangeValue }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="currency">
       <div className="currency__list">
@@ -9,7 +12,7 @@ const Currency = ({ activeCurrency, setActiveCurrency, currencyRates, value, onC
           <div
             key={item}
             className={`currency__item ${activeCurrency === item ? 'active' : ''}`}
-            onClick={() => setActiveCurrency(item)}
+            onClick={() => dispatch(setCurrency(item))}
           >
             {item}
           </div>
@@ -17,7 +20,7 @@ const Currency = ({ activeCurrency, setActiveCurrency, currencyRates, value, onC
       </div>
       <input
         type="number"
-        value={value}
+        value={value ? value : ''}
         onChange={(event) => onChangeValue(event.target.value)}
         className="currencyInp"
         placeholder="0"
