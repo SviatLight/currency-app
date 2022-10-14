@@ -1,0 +1,17 @@
+.currency__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .currency__block {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
